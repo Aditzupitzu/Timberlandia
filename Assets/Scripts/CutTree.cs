@@ -7,19 +7,33 @@ public class PlayerAttack : MonoBehaviour
     private float cooldownTime = 1f, lastAttackTime;
     public Image crosshair1, crosshair2;
     public Text healthText;
+    public GameObject pickUpPos;
+
+    // Add a variable to track the collision state
+    private bool isLookingAtObject;
 
     void Update()
     {
         RaycastHit hit;
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
         if (Physics.Raycast(ray, out hit, 5))
         {
             if (hit.collider.CompareTag("Tree"))
             {
+                // Update health text
                 int currentTreeHealth = hit.transform.GetComponent<TreeHealth>().currentHealth;
                 int currentTreeMaxHealth = hit.transform.GetComponent<TreeHealth>().maxHealth;
                 healthText.text = currentTreeHealth + "/" + currentTreeMaxHealth;
-                CrosshairActivate();
+
+                // Activate crosshair if not already active
+                if (!isLookingAtObject)
+                {
+                    CrosshairActivate();
+                    isLookingAtObject = true;
+                }
+
+                // Handle attack
                 if (Input.GetMouseButton(0))
                 {
                     if (Time.time - lastAttackTime >= cooldownTime)
@@ -29,11 +43,26 @@ public class PlayerAttack : MonoBehaviour
                     }
                 }
             }
+            else
+            {
+                // Deactivate crosshair if it was previously active
+                if (isLookingAtObject)
+                {
+                    healthText.text = " ";
+                    CrosshairDeactivate();
+                    isLookingAtObject = false;
+                }
+            }
         }
         else
         {
-            healthText.text = " ";
-            CrosshairDeactivate();
+            // Deactivate crosshair if no object is hit
+            if (isLookingAtObject)
+            {
+                healthText.text = " ";
+                CrosshairDeactivate();
+                isLookingAtObject = false;
+            }
         }
     }
 

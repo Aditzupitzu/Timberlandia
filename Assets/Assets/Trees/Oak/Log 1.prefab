@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_LocalScale.x
-      value: 34.64883
+      value: 44.629604
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_LocalScale.y
-      value: 34.64883
+      value: 44.629604
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_LocalScale.z
-      value: 121.270905
+      value: 156.20361
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62,7 +62,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_ConstrainProportionsScale
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_Name
@@ -70,11 +70,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_TagString
-      value: CanPickUp
+      value: Log
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -100,7 +100,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5522106670900885987}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 3
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -118,7 +118,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!64 &5471538031067841369
 MeshCollider:
   m_ObjectHideFlags: 0
