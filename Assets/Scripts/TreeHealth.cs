@@ -1,10 +1,11 @@
+using System.Collections;
 using UnityEngine;
 
 public class TreeHealth : MonoBehaviour
 {
     public int maxHealth = 100, currentHealth;
     float treeScale;
-    public GameObject log, playerStats;
+    public GameObject log, player, treeSpawner;
     public Vector3 originalLogScale, logScale;
     void Start()
     {
@@ -13,7 +14,12 @@ public class TreeHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        if (currentHealth <= 0) Die();
+        if (currentHealth <= 0)
+        {
+            Die();
+            StartCoroutine(SpawnTree());
+            player.GetComponent<PlayerStats>().cutTrees++;
+        }
     }
     public void Die()
     {
@@ -25,7 +31,13 @@ public class TreeHealth : MonoBehaviour
         {
             logScale = originalLogScale * treeScale;
             log.transform.localScale = logScale;
-            Instantiate(log, transform.position + new Vector3(0, i+2, 0), Quaternion.Euler(Random.Range(0f, 10f), Random.Range(0f, 10f), Random.Range(0f, 10f))); 
+            Instantiate(log, transform.position + new Vector3(0, i + 2, 0), Quaternion.Euler(Random.Range(0f, 45f), Random.Range(0f, 45f), Random.Range(0f, 45f)));
         }
+    }
+
+    IEnumerator SpawnTree()
+    {
+        treeSpawner.GetComponent<TreeSpawner>().SpawnTrees(1);
+        yield return new WaitForSeconds(30);
     }
 }

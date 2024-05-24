@@ -10,15 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_LocalScale.x
-      value: 45.27677
+      value: 34.64883
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_LocalScale.y
-      value: 45.27677
+      value: 34.64883
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_LocalScale.z
-      value: 158.46869
+      value: 121.270905
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_LocalPosition.x
@@ -67,6 +67,14 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 1326109090df2214aa1167b5b393f702, type: 3}
       propertyPath: m_Name
       value: Log 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1326109090df2214aa1167b5b393f702, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 1326109090df2214aa1167b5b393f702, type: 3}
+      propertyPath: m_TagString
+      value: CanPickUp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

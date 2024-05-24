@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private int damageAmount = 10;
+    private int damageAmount = 100;
     private float cooldownTime = 1f, lastAttackTime;
     public Image crosshair1, crosshair2;
     public Text healthText;

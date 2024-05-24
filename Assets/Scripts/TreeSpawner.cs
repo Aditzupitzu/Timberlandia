@@ -12,7 +12,7 @@ public class TreeSpawner : MonoBehaviour
         SpawnTrees(numberOfTrees);
     }
 
-    void SpawnTrees(int numberOfTrees)
+    public void SpawnTrees(int numberOfTrees)
     {
         for (int i = 0; i < numberOfTrees; i++)
         {
