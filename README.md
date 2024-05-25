@@ -11,11 +11,11 @@ Construire: Prin intermediul meniului Blueprint, care poate fi accesat prin apă
 
 
 3. Cerințe minime sistem 
-    OS: Windows 10 
-    CPU: Intel® Celeron N4020 
-    GPU: Intel® UHD Graphics 600 
-    RAM: 8GB 
-    Stocare: 5GB 
+    OS: Windows 10 <br>
+    CPU: Intel® Celeron N4020 <br>
+    GPU: Intel® UHD Graphics 600 <br>
+    RAM: 8GB <br>
+    Stocare: 5GB <br>
 
 4. Ghid de instalare și configurare a aplicație 
 Pentru a instala jocul, accesați pagina de GitHub. Apoi, mergeți la secțiunea „Releases” și descărcați fișierul zip „Timberlandia.zip”. După ce descărcarea este completă, extrageți conținutul arhivei și începeți să jucați! 
@@ -28,8 +28,8 @@ Pentru a instala jocul, accesați pagina de GitHub. Apoi, mergeți la secțiunea
 
 6. Resurse externe: 
     Pentru sistemul de mișcare al jucătorului, am folosit soluția prezentată de Dave / Game Development:
-    https://www.youtube.com/watch?v=f473C43s8nE&t=440s 
-    Efectele sonore au fost preluate de pe site-ul www.pixabay.com 
+    https://www.youtube.com/watch?v=f473C43s8nE&t=440s<br>
+    Efectele sonore au fost preluate de pe site-ul www.pixabay.com <br>
     Muzica de fundal a fost compusă de Kevin Macleod. 
 
 8. Concluzie 
