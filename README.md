@@ -12,8 +12,8 @@ Construire: Prin intermediul meniului Blueprint, care poate fi accesat prin apă
 
 3. Cerințe minime sistem 
     OS: Windows 10 <br>
-    CPU: Intel® Celeron N4020 <br>
-    GPU: Intel® UHD Graphics 600 <br>
+    CPU: Intel® Core™ i5-1135G7 <br>
+    GPU: Iris® Xe Graphics <br>
     RAM: 8GB <br>
     Stocare: 5GB <br>
 
@@ -27,7 +27,7 @@ Pentru a instala jocul, accesați pagina de GitHub. Apoi, mergeți la secțiunea
     Am folosit site-ul Photopea pentru a realiza diverse ilustrații precum logo-ul jocului. 
 
 6. Resurse externe: 
-    Pentru sistemul de mișcare al jucătorului, am folosit soluția prezentată de Dave / Game Development:
+    Pentru sistemul de mișcare al jucătorului, am folosit soluția prezentată de Dave / Game Development: <br>
     https://www.youtube.com/watch?v=f473C43s8nE&t=440s<br>
     Efectele sonore au fost preluate de pe site-ul www.pixabay.com <br>
     Muzica de fundal a fost compusă de Kevin Macleod. 
