@@ -27,10 +27,11 @@ Pentru a instala jocul, accesați pagina de GitHub. Apoi, mergeți la secțiunea
     Am folosit site-ul Photopea pentru a realiza diverse ilustrații precum logo-ul jocului. 
 
 6. Resurse externe: 
-    Pentru sistemul de mișcare al jucătorului, am folosit soluția prezentată de Dave / Game Development: https://www.youtube.com/watch?v=f473C43s8nE&t=440s 
+    Pentru sistemul de mișcare al jucătorului, am folosit soluția prezentată de Dave / Game Development:
+    https://www.youtube.com/watch?v=f473C43s8nE&t=440s 
     Efectele sonore au fost preluate de pe site-ul www.pixabay.com 
     Muzica de fundal a fost compusă de Kevin Macleod. 
 
-7. Concluzie 
+8. Concluzie 
 Timberlandia oferă o alternativă relaxantă la jocurile de supraviețuire, concentrându-se pe explorare și construcție într-un mediu low-poly. 
 Consider că ideea jocului este interesantă și are un potențial considerabil pentru dezvoltare pe termen lung. Pentru publicul său țintă, jocul poate oferi momente de relaxare și evadare din cotidian. 
