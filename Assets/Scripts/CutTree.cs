@@ -1,15 +1,16 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private int damageAmount = 100;
+    public int damageAmount;
     private float cooldownTime = 1f, lastAttackTime;
+    public GameObject playerStats, woodParticles, axe;
     public Image crosshair1, crosshair2;
     public Text healthText;
-    public GameObject pickUpPos, woodParticles;
-
-    // Add a variable to track the collision state
+    public bool hitting;
     private bool isLookingAtObject;
 
     void Update()
@@ -38,9 +39,13 @@ public class PlayerAttack : MonoBehaviour
                 {
                     if (Time.time - lastAttackTime >= cooldownTime)
                     {
+                        StartCoroutine(AxeSwing());
+                        gameObject.GetComponent<AudioSource>().pitch = Random.Range(0.8f, 1.2f);
+                        gameObject.GetComponent<AudioSource>().Play();
                         woodParticles.transform.position = hit.point;
                         woodParticles.GetComponent<ParticleSystem>().Play();
                         lastAttackTime = Time.time;
+                        damageAmount = playerStats.GetComponent<PlayerStats>().axeDamage;
                         hit.transform.GetComponent<TreeHealth>().TakeDamage(damageAmount);
                     }
                 }
@@ -66,6 +71,8 @@ public class PlayerAttack : MonoBehaviour
                 isLookingAtObject = false;
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.H)) playerStats.GetComponent<PlayerStats>().axeDamage *= 2;
     }
 
     private void CrosshairActivate()
@@ -79,4 +86,11 @@ public class PlayerAttack : MonoBehaviour
         crosshair1.enabled = true;
         crosshair2.enabled = false;
     }
+    IEnumerator AxeSwing()
+    {
+        axe.GetComponent<Animator>().Play("AxeSwing");
+        yield return new WaitForSeconds(0.5f);
+        axe.GetComponent<Animator>().Play("Idle");
+    }
+
 }

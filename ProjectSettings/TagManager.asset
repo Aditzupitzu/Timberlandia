@@ -5,10 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Tree
-  - Stump
   - Log
-  - CanPickUp
-  - CinemachineTarget
+  - Plank
+  - Pickable
+  - Pleyar
+  - Terrain
   layers:
   - Default
   - TransparentFX
